@@ -846,7 +846,7 @@ main .container .right{
     display: flex;
     /*justify-content: space-between;*/
     height: 12rem;
-    width: 100%;
+    width: 100vw;
     gap: 0.3rem;
     overflow: hidden !important;
     background: blue;
@@ -865,17 +865,13 @@ main .container .right{
     overflow: hidden;
 }*/
 .middle .stories .story{
-    font-size: 0.7rem;
-    position: relative;
-    overflow: hidden;
     min-width: 0px;
     flex:1;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
     font-size: 0.7rem;
     position: relative;
     overflow: hidden;
+    flex:1;
+    position: relative;
 }
 }
 /*=====================================GENERAL STYLING===============================*/
