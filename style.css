@@ -843,6 +843,7 @@ main .container .right{
 }
 
 .middle .stories{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 12rem;
