@@ -843,13 +843,14 @@ main .container .right{
 }
 
 .middle .stories{
-    width: 100%;
+    display: block;
+    width: fit-content;
     display: flex;
     justify-content: space-between;
     height: 12rem;
     gap: 0.3rem;
     overflow: hidden;
-    display: none;
+    background: red;
 }
 
 .middle .stories .story{
