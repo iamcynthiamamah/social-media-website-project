@@ -841,14 +841,17 @@ main .container .right{
 .middle .create-post{
     width: 100%;
 }
-
+.middle{
+    width: 100%;
+    overflow: hidden;
+}
 .middle .stories{
     display: flex;
     /*justify-content: space-between;*/
     height: 12rem;
-    width: 100vw;
+    max-width: 100%;
     gap: 0.3rem;
-    overflow: hidden !important;
+    overflow-x: scroll !important;
     background: blue;
 }
 /*.middle .stories .story{
@@ -865,12 +868,11 @@ main .container .right{
     overflow: hidden;
 }*/
 .middle .stories .story{
-    min-width: 0px;
-    flex:1;
+    width: 100%;
+    flex:2;
     font-size: 0.7rem;
     position: relative;
     overflow: hidden;
-    flex:1;
     position: relative;
 }
 }
