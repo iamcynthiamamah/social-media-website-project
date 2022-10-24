@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Website using HTML, CSS & Javascript</title>
+
+    <!--LINKING CSS FILE-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--ICONSCOUT CDN-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!--LINKING POPPINS FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!----------------------------------------NAVBAR-------------------->
+    <nav>
+        <div class="container">
+            <h2 class="logo">Nexus</h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators, Inspirations and projects">
+            </div>
+            <div class="create">
+                <label for="Create-post" class="btn btn-primary">Create</label>
+                <!--we didnt use button here because I want the create button to act as a label for creating post-->
+                <div class="profile-pics">
+                    <img src="/images/unnamed.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!--====================================END OF NAV BAR==============-->
+    
+
+
+
+<!----------------------------------------MAIN-------------------->
+    <main>
+        <div class="container">
+        <!--************************LEFT MAIN*******************************-->
+            <div class="left">
+            <!-- LEFT MAIN PROFILE-->
+                <a  class="profile">
+                    <div class="profile-pics">
+                        <img src="/images/unnamed.jpg">
+                    </div>
+                    <div class="handle">
+                        <h4>Cynthia Mamah</h4>
+                        <p class="text-muted">@ogechi</p>
+                    </div>
+                </a>
+            <!--LEFT MAIN SIDEBAR-->
+                <div class="sidebar">
+                    <a class="menu-item active">
+                        <span>
+                            <i class="uil uil-home"></i>
+                        </span>
+                        <h3>Home</h3>
+                    </a>  
+                    
+
+                    <a class="menu-item">
+                        <span>
+                            <i class="uil uil-compass"></i>
+                        </span>
+                        <h3>Explore</h3>
+                        
+                    </a>
+
+
+                    <a class="menu-item" id="notifications"> <!--the id will be targeted by javascript-->
+                        <span>
+                            <i class="uil uil-bell">
+                                <small class="notification-count">9+</small>
+                            </i>
+                        </span>
+                        <h3>Notification</h3>
+                        
+                    <!----------------------------------------NOTIFICATION POP-UP------------------------->
+                        <div class="notification-popup">
+                            <div>
+                                <div class="profile-pics">
+                                    <img src="/images/James Nwakigwe.jpg" alt="">
+                                </div>
+                                <div class="notification-body">
+                                    <b>James Nwakigwe</b> accepted your friend request
+                                    <small class="text-muted">2 DAYS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-pics">
+                                    <img src="/images/ije.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Slimangel</b> shared a post you were tagged in
+                                    <small class="text-muted">4 DAYS AGO</small>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <div class="profile-pics">
+                                    <img src="/images/uche.jpg" >
+                                </div>
+                                <div class="notification-body">
+                                    <b>Uche Ogbonna</b> Commented On Your Post
+                                    <small class="text-muted">1 WEEK AGO</small>
+                                </div>
+                            </div>
+
+
+                            <div>
+                                <div class="profile-pics">
+                                    <img src="/images/Ijeoma.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Janey Mamah</b> liked your post
+                                    <small class="text-muted">2 WEEKS AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-pics">
+                                    <img src="/images/mich.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Mamah Michael</b> shared your post
+                                    <small class="text-muted">1 MONTH AGO</small>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="profile-pics">
+                                    <img src="/images/jamin.jpg">
+                                </div>
+                                <div class="notification-body">
+                                    <b>Trust Jamin</b> liked a post you shared
+                                    <small class="text-muted">2 MONTH AGO</small>
+                                </div>
+                            </div>
+
+                        </div>
+                    <!----------------------------------------END OF NOTIFICATION POP-UP------------------------->
+                    </a>
+
+
+                    <a class="menu-item" id="messages-notifications">
+                        <span>
+                            <i class="uil uil-envelope-alt">
+                                <small class="notification-count">6</small>
+                            </i>
+                        </span>
+                        <h3>Messages</h3>
+                        
+                    </a>
+
+
+                    <a class="menu-item">
+                        <span>
+                            <i class="uil uil-bookmark"></i>
+                        </span>
+                        <h3>Bookmarks</h3>
+                        
+                    </a>
+
+
+                    <a class="menu-item">
+                        <span>
+                            <i class="uil uil-chart-line"></i>
+                        </span>
+                        <h3>Analytics</h3>
+                        
+                    </a>
+
+
+                    <a class="menu-item">
+                        <span>
+                            <i class="uil uil-palette"></i>
+                        </span>
+                        <h3>Theme</h3>
+                        
+                    </a>
+                    
+
+                    <a class="menu-item">
+                        <span>
+                            <i class="uil uil-setting"></i>
+                        </span>
+                        <h3>Settings</h3>
+                        
+                    </a>
+                </div>
+                <!--END OF LEFT MAIN SIDEBAR-->
+
+            <!--LEFT MAIN BUTTON-->
+                <label for="create-post" class="btn btn-primary"> Create Post</label>
+
+            </div>
+<!------------------------------------END OF LEFT MAIN----------------------------------------->
+
+
+
+
+<!--**********************************MIDDLE MAIN*******************************-->
+            <div class="middle">
+                <!---------------------------------STORIES-------------->
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/unnamed.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/jamin.jpg">
+                        </div>
+                        <p class="name">Trust Jamin</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/uche.jpg">
+                        </div>
+                        <p class="name">Uche Ogbonna</p>
+                    </div>
+            
+
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/Ijeoma.jpg">
+                        </div>
+                        <p class="name">Mamah Janey</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/James Nwakigwe.jpg">
+                        </div>
+                        <p class="name">James Nwakigwe</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/victor.jpg">
+                        </div>
+                        <p class="name">Victor Obaro</p>
+                    </div>
+
+<!--
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/JohnObidi.webp">
+                        </div>
+                        <p class="name">John Obidi</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/ohanwe.jpg">
+                        </div>
+                        <p class="name">Ohanwe Emmanuel</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/Aronu-Ugochukwu-CEO-Xend-Finance-953x682.jpg">
+                        </div>
+                        <p class="name">Aronu Ugochukwu</p>
+                    </div>
+
+
+                    <div class="story">
+                        <div class="profile-pics">
+                            <img src="./images/mich.jpg">
+                        </div>
+                        <p class="name">Michael Mamah</p>
+                    </div>
+-->
+                </div>
+
+            <!------------------------------END OF STORIES------------------------>
+                <form class="create-post">
+                    <div class="profile-pics">
+                        <img src="/images//unnamed.jpg">
+                    </div>
+                    
+                    <input id="create-post" type="text" placeholder="What's on your mind, Diana?" >
+
+                    <input type="submit" value="post" class="btn btn-primary">
+                </form>
+        
+
+         <!------------------------------FEEDS------------------------>
+
+                <div class="feeds">
+
+             <!------------------------------FIRST FEED------------------------>
+                    
+             <div class="feed">
+                <div class="head">
+                    <div class="user">
+                        <div class="profile-pics">
+                            <img src="./images/Ijeoma.jpg">
+                        </div>
+                        <div class="info">
+                            <h3>Mamah Janey</h3>
+                            <small>Houston Texas, 8 MINUTES AGO</small>
+                        </div>
+                    </div>
+                    <span class="edit">
+                        <i class="uil uil-ellipsis-h"></i>
+                    </span>
+                </div>
+
+                <div class="photo">
+                    <img src="/images/ijess.jpg">
+                </div>
+
+                <div class="action-button">
+                    <div class="interaction-buttons">
+                        <span><i class="uil uil-heart"></i></span>
+                        <span><i class="uil uil-comment-dots"></i></span>
+                        <span><i class="uil uil-share-alt"></i></span>
+                    </div>
+                    <div class="bookmark">
+                        <span><i class="uil uil-bookmark-full"></i></span>
+                    </div>
+                </div>
+
+                
+                <div class="liked-by">
+                    <span><img src="./images/mich.jpg"></span>
+                    <span><img src="./images/Aronu-Ugochukwu-CEO-Xend-Finance-953x682.jpg"></span>
+                    <span><img src="./images/ohanwe.jpg"></span>
+                    <p>Liked by <b>Mamah Michael</b> and <b>10,344 others</b></p>
+                </div>
+
+                <div class="caption">
+                    <p><b>Mamah Ijeoma</b> Lorem ipsum dolor sit amet. <span class="harsh-tag">#NEARWarri</span> </p>
+                </div>
+
+                <div class="comment text-muted"> view all 547 comments</div>
+            </div>
+            <!------------------------------SECOND FEED------------------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pics">
+                                    <img src="./images/James Nwakigwe.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>James Nwakigwe</h3>
+                                    <small>Lagos, 15 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/TEGGY O(33) (1).jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="liked-by">
+                            <span><img src="./images/JohnObidi.webp"></span>
+                            <span><img src="./images/Aronu-Ugochukwu-CEO-Xend-Finance-953x682.jpg"></span>
+                            <span><img src="./images/ohanwe.jpg"></span>
+                            <p>Liked by <b>John Obidi</b> and <b>2,534 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>James Nwakigwe</b> Lorem ipsum dolor sit amet. <span class="harsh-tag">#NEARWarri</span> </p>
+                        </div>
+
+                        <div class="comment text-muted"> view all 547 comments</div>
+                    </div>
+
+
+
+
+                    <!------------------------------THIRD FEED------------------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pics">
+                                    <img src="./images/nodex logo">
+                                </div>
+                                <div class="info">
+                                    <h3>Nodex Ihub</h3>
+                                    <small>Warri, 32 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/TEGGY O(54).jpg">
+                           
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="liked-by">
+                            <span><img src="./images/ohanwe.jpg"></span>
+                            <span><img src="./images/Aronu-Ugochukwu-CEO-Xend-Finance-953x682.jpg"></span>
+                            <span><img src="./images/James Nwakigwe.jpg"></span>
+                            <p>Liked by <b>Ohanwe Emmanuel</b> and <b>4,589 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>James Nwakigwe</b> Lorem ipsum dolor sit amet. <span class="harsh-tag">#NEARWarri</span> </p>
+                        </div>
+
+                        <div class="comment text-muted"> view all 547 comments</div>
+                    </div>
+
+
+
+                    <!------------------------------FOURTH FEED------------------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pics">
+                                    <img src="./images/unnamed.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Cynthia Mamah</h3>
+                                    <small>USA, 56 MINUTES AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/nodex1.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="liked-by">
+                            <span><img src="./images/Ijeoma.jpg"></span>
+                            <span><img src="./images/jamin.jpg"></span>
+                            <span><img src="./images/nodex logo"></span>
+                            <p>Liked by <b>Janey Mamah</b> and <b>14,594 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Cynthia Mamah</b> Lorem ipsum dolor sit amet. <span class="harsh-tag">#NEARWarri</span> </p>
+                        </div>
+
+                        <div class="comment text-muted"> view all 2,547 comments</div>
+                    </div>
+
+
+
+                    <!------------------------------FIFTH FEED------------------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pics">
+                                    <img src="./images/uche.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Uche Ogbonna</h3>
+                                    <small>Owerri, 1 HOUR AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/uche2.jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="liked-by">
+                            <span><img src="./images/JohnObidi.webp"></span>
+                            <span><img src="./images/uche.jpg"></span>
+                            <span><img src="./images/victor.jpg"></span>
+                            <p>Liked by <b>John Obidi</b> and <b>8,534 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Uche Ogbonna</b> Lorem ipsum dolor sit amet. <span class="harsh-tag">#NEARWarri</span> </p>
+                        </div>
+
+                        <div class="comment text-muted"> view all 3,547 comments</div>
+                    </div>
+
+
+
+                    <!------------------------------SIXTH FEED------------------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pics">
+                                    <img src="./images/nodex logo">
+                                </div>
+                                <div class="info">
+                                    <h3>Nodex Ihub</h3>
+                                    <small>Warri, 3 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/TEGGY O(74).jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="liked-by">
+                            <span><img src="./images/Aronu-Ugochukwu-CEO-Xend-Finance-953x682.jpg"></span>
+                            <span><img src="./images/emeka.jpg"></span>
+                            <span><img src="./images/mich.jpg"></span>
+                            <p>Liked by <b>Ugochukwu Aronu</b> and <b>12,534 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Nodex Ihub</b> Lorem ipsum dolor sit amet. <span class="harsh-tag">#NEARWarri</span> </p>
+                        </div>
+
+                        <div class="comment text-muted"> view all 947 comments</div>
+                    </div>
+
+
+                    <!------------------------------SEVENTH FEED------------------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pics">
+                                    <img src="./images/victor.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Victor Obaro</h3>
+                                    <small>Warri, 4 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/TEGGY O(78).jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="liked-by">
+                            <span><img src="./images/nodex logo"></span>
+                            <span><img src="./images/Aronu-Ugochukwu-CEO-Xend-Finance-953x682.jpg"></span>
+                            <span><img src="./images/James Nwakigwe.jpg"></span>
+                            <p>Liked by <b>John Nodex Ihub</b> and <b>20,534 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>Victor Obaro</b> Lorem ipsum dolor sit amet. <span class="harsh-tag">#NEARWarri</span> </p>
+                        </div>
+
+                        <div class="comment text-muted"> view all 5,547 comments</div>
+                    </div>
+
+
+
+                    <!------------------------------EIGHT FEED------------------------>
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-pics">
+                                    <img src="./images/emeka.jpg">
+                                </div>
+                                <div class="info">
+                                    <h3>Emeka Obiwulu</h3>
+                                    <small>Scotland, 8 HOURS AGO</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="/images/TEGGY O(70).jpg">
+                        </div>
+
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span><i class="uil uil-comment-dots"></i></span>
+                                <span><i class="uil uil-share-alt"></i></span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class="uil uil-bookmark-full"></i></span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="liked-by">
+                            <span><img src="./images/jamin.jpg"></span>
+                            <span><img src="./images/James Nwakigwe.jpg"></span>
+                            <span><img src="./images/ohanwe.jpg"></span>
+                            <p>Liked by <b>Jamin Trust</b> and <b>45,534 others</b></p>
+                        </div>
+
+                        <div class="caption">
+                            <p><b>James Nwakigwe</b> Lorem ipsum dolor sit amet. <span class="harsh-tag">#NEARWarri</span> </p>
+                        </div>
+
+                        <div class="comment text-muted"> view all 29,547 comments</div>
+                    </div>
+                    <!------------------------------END OF EIGHT FEED------------------------>
+                </div>
+            <!------------------------------END OF FEEDS------------------------>
+        
+            </div>
+<!-------============================END OF MIDDLE MAIN=====================----------->
+
+
+
+
+<!--*****************************RIGHT MAINs*******************************-->
+            <div class="right">
+            <!------------------------------MESSAGES------------------------>
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <i class="uil uil-edit"></i>
+                    </div>
+                        <!--------SEARCH BAR FOR MESSAGES-------------------->
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="Search Messages" id="message-search">
+                    </div>
+                            <!-------MESSAGES CATEGORY FOR MESSAGES-------------------->
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6 class="category-request">Requests(9) </h6>
+                    </div>
+                            
+                    
+                           <!---------MESSAGE 1 FOR MESSAGES---------->
+                    <div class="message">
+                        <div class="profile-pics">
+                            <img src="./images/ohanwe.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Ohanwe Emmanuel</h5>
+                            <p class="text-bold">How far Jetpaz hosting? </p>
+                        </div>
+                    </div>
+
+
+                               <!---------MESSAGE 2 FOR MESSAGES---------->
+                    <div class="message">
+                        <div class="profile-pics">
+                            <img src="./images/James Nwakigwe.jpg">
+                            <div class="active"></div>
+                        </div>
+                        <div class="message-body">
+                            <h5>Chima James</h5>
+                            <p class="text-bold">When Will you be in Warri? </p>
+                        </div>
+                    </div>
+
+                           <!---------MESSAGE 3 FOR MESSAGES------->
+                   <div class="message">
+                        <div class="profile-pics">
+                            <img src="./images/Ijeoma.jpg">
+                        </div>
+                       <div class="message-body">
+                            <h5>Mamah Janey</h5>
+                            <p class="text-bold">Sis ❤️ are you back?</p>
+                        </div>
+                    </div>
+
+                               <!---------MESSAGE 4 FOR MESSAGES--->
+                    <div class="message">
+                        <div class="profile-pics">
+                            <img src="./images/uche.jpg">
+                            <div class="active">.</div>  <!--to give the green tick to the active users that sent message-->
+                        </div>
+                        <div class="message-body">
+                            <h5>Uche Ogbonna</h5>
+                            <p class="text-bold">Cynthy luv, how are you?</p>
+                        </div>
+                    </div>
+
+                           <!---------MESSAGE 5 FOR MESSAGES------>
+                    <div class="message">
+                        <div class="profile-pics">                               
+                            <img src="./images/Aronu-Ugochukwu-CEO-Xend-Finance-953x682.jpg">
+                        </div>
+                        <div class="message-body">
+                            <h5>Ugochukwu Aronu</h5>
+                            <p class="text-bold">Did you attend TXE summit?</p>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <!------------------------------END OF MESSAGES------------------------>
+
+                <!------------------------------FRIEND REQUESTS------------------------>
+                     
+                <div class="friend-requests">
+                    <h4>Requests</h4>
+                        <!------------1st REQUEST---------------->
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-pics">
+                                <img src="./images/sammy.jpg">
+                            </div>
+                            <div>
+                                <h5> Samuel Thomas</h5>
+                                <p class="text-muted">
+                                    88 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+
+                     <!------------2nd REQUEST---------------->
+                     <div class="request">
+                        <div class="info">
+                            <div class="profile-pics">
+                                <img src="./images/raaymi.jpg">
+                            </div>
+                            <div>
+                                <h5>Raaymii</h5>
+                                <p class="text-muted">
+                                    103 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+
+
+                     <!------------3rd REQUEST---------------->
+                     <div class="request">
+                        <div class="info">
+                            <div class="profile-pics">
+                                <img src="./images/samuel.jpg">
+                            </div>
+                            <div>
+                                <h5> Foluwasho Samuel</h5>
+                                <p class="text-muted">
+                                    56 mutual friends
+                                </p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">
+                                Accept
+                            </button>
+                            <button class="btn">
+                                Decline
+                            </button>
+                        </div>
+                    </div>
+                        <!-----------------END OF REQUEST--------->
+
+                </div>
+                <!---------------END OF FRIEND REQUEST------------------------>
+            </div>
+        <!--=====================END OF RIGHT MAIN============-->
+        </div>
+    </main>
+    <!--====================================END OF MAIN==============-->
+
+
+
+
+    <!----------------------------------------THEME CUSTOMIZATION-------------------->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted" >Manage your font size, color, and background</p>
+
+            <!-----------------FONT SIZE--------->
+            <div class="font-size">
+                <h4>Font size</h4>
+                <div class="font-cust">
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1" ></span>
+                        <span class=" font-size-2 active" ></span>
+                        <span class="font-size-3" ></span>
+                        <span class="font-size-4" ></span>
+                        <span class="font-size-5" ></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+
+
+            <!-----------------PRIMARY COLORS--------->
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+
+            <!-----------------BACKGROUND COLORS--------->
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="'bg-1" >Light</h5>
+                    </div>
+
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="'bg-2" >Dim</h5>
+                    </div>
+
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="'bg-3" >Lights Out</h5>
+                    </div>
+                </div>
+            </div>
+            <!-----------------END OF BACKGROUND COLORS--------->
+
+        </div>
+        <!-----------------END OF CARDS--------->
+    </div>
+    <!--====================================END OF THEME CUSTOMIZATION==============-->
+
+
+
+
+
+    <!----------------------------------------NAVBAR-------------------->
+    <!--====================================END OF NAV BAR==============-->
+
+
+    <!----------------------------------------NAVBAR-------------------->
+    <!--====================================END OF NAV BAR==============-->
+
+
+    <!----------------------------------------NAVBAR-------------------->
+    <!--====================================END OF NAV BAR==============-->
+
+
+    <!----------------------------------------NAVBAR-------------------->
+    <!--====================================END OF NAV BAR==============-->
+
+
+    <!----------------------------------------NAVBAR-------------------->
+    <!--====================================END OF NAV BAR==============-->
+
+
+    <!----------------------------------------NAVBAR-------------------->
+    <!--====================================END OF NAV BAR==============-->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
