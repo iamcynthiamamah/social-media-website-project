@@ -843,22 +843,40 @@ main .container .right{
 }
 
 .middle .stories{
-    display: block;
-    width: fit-content;
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     height: 12rem;
+    width: 100%;
     gap: 0.3rem;
-    overflow: hidden;
-    background: red;
+    overflow: hidden !important;
+    background: blue;
 }
-
+/*.middle .stories .story{
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.7rem;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}*/
 .middle .stories .story{
     font-size: 0.7rem;
     position: relative;
     overflow: hidden;
+    min-width: 0px;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.7rem;
+    position: relative;
+    overflow: hidden;
 }
-   
 }
 /*=====================================GENERAL STYLING===============================*/
 /*=====================================GENERAL STYLING===============================*/
