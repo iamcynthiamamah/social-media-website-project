@@ -250,3 +250,15 @@ colorPalette.forEach(color => {
         changeBG();
         })
 
+
+
+
+
+    const menu = document.querySelector('.left')
+    console.log(menu)
+    const profile = document.querySelector('nav .profile-pics img')
+    console.log(profile)
+
+    profile.addEventListener('click', () => {
+        menu.style.display = 'block'
+    } )
