@@ -17,7 +17,7 @@ menuItems.forEach(item =>{
         changeActiveMenu();   //this function is called to remove all existing active menu class before proceeding to listen to the click below and performing the function below
         item.classList.add('active');
 
-        if(item.id != 'notifications'){
+        if(item.id != 'notificationss'){
             document.querySelector('.notification-popup').style.display = 'none'
         }
         else{
@@ -86,6 +86,7 @@ const closeThemeModal = (e) => { //will close the theme customization whenever w
         themeModal.style.display = 'none'
     }
 }
+
 themeModal.addEventListener('click', closeThemeModal)
 
 
@@ -256,9 +257,39 @@ colorPalette.forEach(color => {
 
     const menu = document.querySelector('.left')
     console.log(menu)
-    const profile = document.querySelector('nav .profile-pics img')
+    const profile = document.querySelector('.profile-pics.one ')
     console.log(profile)
+    const leftMenu = document.querySelector('.left .sidebar .m')
+    console.log(leftMenu)
 
-    profile.addEventListener('click', () => {
-        menu.style.display = 'block'
-    } )
+    
+//OPEN MENU PROFILE FOR SMALL DEVICES
+    const openMenu = () => {
+        if(menu.style.display === 'block'){
+            menu.style.display = 'none'
+        }
+
+        else{
+            menu.style.display = 'block';
+        }
+    }
+
+    profile.addEventListener('click', openMenu);  //calls the openMenu function on clicking the profile
+
+//CLOSE MENU PROFILE FOR SMALL DEVICES
+    // const closeMenu = (e) => {
+    //     if(e.target === menu){
+    //         menu.style.display = 'none'
+    //     }
+    // }
+
+    // window.addEventListener('click', closeMenu)
+//==============================================================================================
+//    const container = document.querySelector('.container')
+//     container.addEventListener('click', function(e){
+//         if(e.target === menu){
+//             menu.style.display = 'none'
+//         }
+//         })
+//WHY IS THE FUNCTION ABOVE NOT WORKING
+        

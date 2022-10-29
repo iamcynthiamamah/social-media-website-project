@@ -136,6 +136,10 @@ nav .search-bar input[type="search"]::placeholder{
     gap: 2rem;
 }
 
+nav .profile-pics.one{
+    display: none;
+}
+
 
 /*=====================================MAIN===============================*/
 
@@ -885,6 +889,16 @@ main .container .right{
 /*==========================================================MEDIA SCREEN FOR SMALLEST SCREEN==================================================================*/
 @media screen and (max-width: 620px) {
 
+    nav .profile-pics.two{
+        display: none;
+    }
+
+    nav .profile-pics.one{
+        display: block;
+
+        
+    }
+
     .left{
         display: none;
     }
@@ -1010,6 +1024,10 @@ main .container .right{
     .customize-theme .card{
         width: 92vw;
     }
+
+/* menu display in small device*/
+
+
     
 }
 /*=====================================GENERAL STYLING===============================*/
