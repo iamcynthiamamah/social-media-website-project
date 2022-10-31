@@ -1,1 +1,1 @@
-A Responsive Social Media Website with user friendly Theme CUSTOMIZATION feature. Ensure to navigate through the Messages, Noitfications, Theme Customization and profile(by clicking the profile image) to see the magic.
+A Responsive Social Media Website with user friendly THEME CUSTOMIZATION feature. Ensure to navigate through the Messages, Noitfications, Theme Customization and profile(by clicking the profile image) to see the magic.
